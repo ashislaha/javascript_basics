@@ -1,4 +1,4 @@
-import { addition, multiply } from "./index.js";
+//import { httpKey } from "./index.js";
+import * as indx from "./index.js";
 
-console.log(addition(2,3));
-console.log(multiply(4*5));
+console.log(indx.httpKey);

@@ -1,3 +1,5 @@
+
+// import and export should work when we use type 'module'
 function greet(name) {
     console.log('hello world inside index.js ' + name );
 }
@@ -109,6 +111,16 @@ function addition(num1, num2) {
     return num1 + num2;
 }
 
-function multiply(num1, num2) {
+function multiply(num1, num2 = 1) {
     return num1 * num2;
+}
+
+console.log(multiply("100", "10")); // it converts string into number and do multiply
+
+// export default "apikey"; // should have one default export
+// let httpKey = "httpKey";
+
+// arrow function -- annonymous function
+(username, message) => {
+    console.log("this is an annonymous function for " + user + " with message: " + message);
 }
